@@ -35,3 +35,6 @@ You'll need to create all of the migrations, models, controllers, and views for 
 
 We've provided a seed file so you can have some data to play around with –– run `rake db:seed` once your migrations and models are complete.
 
+rails g resource Doctor name:string department:string --no-test-framework --skip-routes
+rails g resource Patient name:string age:integer --no-test-framework --skip-routes
+rails g resource Appointment appointment_datetime:datetime --no-test-framework --skip-routes
